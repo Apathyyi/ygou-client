@@ -6,8 +6,8 @@
   
 # Android端介绍
 android端使用fragmention + retrofit进行页面布局和请求。  
-[fragmention]https://github.com/YoKeyword/Fragmentation  
-[retrofit]https://square.github.io/retrofit/  
+[fragmention] https://github.com/YoKeyword/Fragmentation  
+[retrofit] https://square.github.io/retrofit/  
 
 APP功能包含用户注册与登录，个人资料管理；使用极光消息验证和IM和第三方登录，实现用户注册和买卖双方的交流。   
 
@@ -19,4 +19,4 @@ APP功能包含用户注册与登录，个人资料管理；使用极光消息�
 
 # 后端
 后端采用spring boot + mybatis + MySQL，注解开发，有个简单的页面表格进行审核，可自行增加内容  
-[后端链接]
+[后端链接] https://github.com/Apathyyi/ygou-server
