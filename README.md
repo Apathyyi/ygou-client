@@ -3,7 +3,7 @@
 系统分为Android前端和后端。前端负责页面展示和跳转，后端负责请求接收和数据存取。  
 
 # 系统架构
-  
+[简单架构图] https://github.com/Apathyyi/ygou-client/blob/master/Architecture.png
 # Android端介绍
 android端使用fragmention + retrofit进行页面布局和请求。  
 [fragmention] https://github.com/YoKeyword/Fragmentation  
