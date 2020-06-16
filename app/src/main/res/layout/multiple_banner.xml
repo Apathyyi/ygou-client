@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigkoo.convenientbanner.ConvenientBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_recycle_item"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+</com.bigkoo.convenientbanner.ConvenientBanner>

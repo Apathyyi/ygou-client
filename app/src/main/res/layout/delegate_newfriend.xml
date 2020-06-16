@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/title_bar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="好友通知"
+        android:textColor="@color/colorText"
+        android:textSize="12sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pull_msg_rv"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pull_msg_more"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@mipmap/icon_right"
+            android:gravity="center_vertical"
+            android:text="查看更多"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:text="好友推荐"
+        android:textColor="@color/colorText"
+        android:textSize="12sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pull_msg_rv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pull_msg_push"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@mipmap/icon_right"
+            android:gravity="center_vertical"
+            android:text="添加更多朋友"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

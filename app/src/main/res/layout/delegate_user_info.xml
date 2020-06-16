@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:textSize="10sp"
+            android:gravity="center|left"
+            android:text="{fa-chevron-left}" />
+        <com.othershe.library.NiceImageView
+            android:id="@+id/img_arrow_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            app:border_color="@android:color/white"
+            app:border_width="10dp"
+            android:src="@mipmap/u1"
+            app:is_circle="true" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_arrow_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@+id/icon_arrow_img_text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_purple"
+            android:layout_toRightOf="@+id/img_arrow_avatar"
+            android:gravity="center_vertical"
+            android:text="最寂寞的心情只需要你一句简单的问候,你在哪" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/icon_arrow_img_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ovalitem"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="编辑" />
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginBottom="5dp"
+    android:background="@android:color/white">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_arrow_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="姓名："
+        android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_arrow_nameval"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/icon_arrow"
+        android:gravity="center"
+        android:text="未设置" />
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/icon_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="{fa-chevron-right}" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="地址："
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_adressval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow2"
+            android:gravity="center"
+            android:text="未设置" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="性别："
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_genderval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow3"
+            android:gravity="center"
+            android:text="未设置" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="生日："
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_birthval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow4"
+            android:gravity="center"
+            android:text="未设置" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="邮箱："
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_emailval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow5"
+            android:gravity="center"
+            android:text="未设置" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="电话："
+            android:gravity="center" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_phoneval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow6"
+            android:gravity="center"
+            android:text="未设置" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_age"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="年龄："
+            android:gravity="center" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_ageval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow7"
+            android:gravity="center"
+            android:text="未设置" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_reciceadress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="收货地址："
+            android:gravity="center" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_adressEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrown"
+            android:gravity="center"
+            android:text="编辑" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrown"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/white">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_user_isidentificated"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="未认证："
+            android:gravity="center" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_arrow_user_isidentificatedval"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/icon_arrow9"
+            android:gravity="center"
+            android:text="去认证" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_arrow9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="{fa-chevron-right}" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_identify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/rl_school"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_school"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="学校："
+                android:gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_schoolval"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/icon_arrow8"
+                android:gravity="center"
+                android:text="未设置" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_arrow8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_college"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_college"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="学院："
+                android:gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_collegeval"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/icon_arrow10"
+                android:gravity="center"
+                android:text="未设置" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_arrow10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_specialty"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_specialty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="专业："
+                android:gravity="center" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_specialtyval"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/icon_arrow11"
+                android:gravity="center"
+                android:text="未设置" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_arrow11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_grade"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="年级："
+                android:gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_arrow_gradeval"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/icon_arrow12"
+                android:gravity="center"
+                android:text="未设置" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_arrow12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

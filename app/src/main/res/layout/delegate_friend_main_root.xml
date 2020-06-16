@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main_root"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_bar"/>
+    <include layout="@layout/title_search"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_more_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+{
+  "code": 0,
+  "message": "OK",
+  "data": {
+    "userId": 1,
+    "name": "张三",
+    "avatar": "http://wx.qlogo.cn/mmopen/guWqj0vybsIHxY2BIqq",
+    "gender": "男",
+    "address": "成都"
+  }
+}

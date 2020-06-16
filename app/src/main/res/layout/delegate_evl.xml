@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_marginLeft="20dp"
+    android:layout_gravity="center"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/evl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="{fa-chevron-left}"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:text="发表评价"/>
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_evl_sub"
+            android:background="@color/app_background"
+            android:layout_marginRight="20dp"
+            android:layout_width="80dp"
+            android:layout_height="30dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sub"
+                android:background="@null"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A8A8A8"
+                android:textSize="14sp"
+                android:text="发表"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/evl_content"
+            android:hint="发表你的评价..."
+            android:background="@null"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="220dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/evl_goods_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/u1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/evl_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/evl_goods_price"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/ll_evl_location"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-map-marker}"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:text="所在位置"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="{fa-chevron-right}"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/evl_address"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+</LinearLayout>

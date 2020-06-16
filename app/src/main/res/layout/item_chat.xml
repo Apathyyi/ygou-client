@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="20dp"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_main_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="3dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_main_username"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="可爱到要死"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_contact_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="今天天气好好啊，你在干什么"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_contact_time"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                android:text="4:30"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:visibility="visible"
+                android:id="@+id/item_contact_count"
+                android:background="@drawable/oval_red_count"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

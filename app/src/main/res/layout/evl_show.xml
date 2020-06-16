@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/evl_show_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="{fa-chevron-left}"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="评价详情"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <LinearLayout
+           android:background="@color/item_background"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/evl_show_userImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/u1"
+                />
+           <androidx.appcompat.widget.AppCompatTextView
+               android:layout_marginLeft="10dp"
+               android:layout_weight="1"
+               android:id="@+id/evl_show_userName"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="名字"/>
+
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="{fa-map-marker}"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/evl_user_address"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/evl_show_goodsImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/u1"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/evl_show_goodsName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="商品名" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/evl_show_goodsPrice"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价钱"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+           android:text="评价到："
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/evl_show_content"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="这件商品太值了"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/evl_show_time"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-09-8"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginRight="20dp"
+                android:id="@+id/btn_edit_comments"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textAlignment="gravity"
+                android:layout_marginTop="10dp"
+                android:textColor="#2CA3E5"
+                android:textSize="16sp"
+                android:text="* *"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <sy.bishe.ygou.delegate.friends.dynamic.MyListView
+            android:id="@+id/evl_list_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </sy.bishe.ygou.delegate.friends.dynamic.MyListView>
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/evl_list_contents"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/app_background" />
+
+    </LinearLayout>
+
+

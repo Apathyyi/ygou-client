@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/myrelease_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/u1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:text="商品名称"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/myrelease_title"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:text="商品名称"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="价格￥:"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/myrelease_price"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:textSize="15sp"
+                    android:layout_height="wrap_content"
+                    android:text="177.00"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text="商品数量 x"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/myrelease_count"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:text="发布时间"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/myrelease_time"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"
+                    android:text="2020-04-5"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="商品状态"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_tag"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_height="wrap_content"
+            android:text="在售"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_delete"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:textColor="@android:color/holo_red_light"
+            android:text="下架商品"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_send"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_blue_light"
+            android:text="确认发货"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_receive_alter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_height="wrap_content"
+            android:text="提醒收货"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_eval_alter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_height="wrap_content"
+            android:text="提醒评价"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_delete_order"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_height="wrap_content"
+            android:text="删除订单"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myrelease_look"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_height="wrap_content"
+            android:text="查看评价"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_background"/>
+
+</LinearLayout>

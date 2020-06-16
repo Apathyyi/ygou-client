@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contents_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="噫噫噫"
+        android:textColor="#2CA3E5"
+        android:textSize="14sp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="回复"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contents_to_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="噫噫噫"
+        android:textColor="#2CA3E5"
+        android:textSize="14sp" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=":"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        >
+    </androidx.appcompat.widget.AppCompatTextView>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/contents_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="你这头像真好看"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+</LinearLayout>

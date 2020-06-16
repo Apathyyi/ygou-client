@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="{fa-times}"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginLeft="12dp"
+            android:textSize="24sp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请输入密码"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="120dp"
+            android:textSize="24sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center_horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/balance_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="支付详情"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/balance_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:text="￥29.97"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_button_lines"
+        >
+    </View>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_pay_choose"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_height="30dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            android:layout_marginLeft="4dp"
+            android:text="支付方式"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/balance"
+            android:text="￥"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="余额支付("/>
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/balance_userName"
+            android:layout_width="0dp"
+           android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:layout_marginRight="4dp"
+            android:text="姓名)"/>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:text="{fa-chevron-right}"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@drawable/shape_button_lines" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_button_lines" />
+
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_password_one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="*"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/shape_button_lines" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_password_two"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:text="*"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/shape_button_lines" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_password_three"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginLeft="120dp"
+            android:text="*"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="180dp"
+            android:background="@drawable/shape_button_lines" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_password_four"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginLeft="180dp"
+            android:text="*"
+            android:visibility="invisible" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="240dp"
+            android:background="@drawable/shape_button_lines" />
+
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_password_five"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginLeft="240dp"
+            android:text="*"
+            android:visibility="invisible" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="300dp"
+            android:background="@drawable/shape_button_lines" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/balance_password_six"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:layout_marginLeft="300dp"
+            android:text="*"
+            android:visibility="invisible" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_button_lines" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="359dp"
+            android:background="@drawable/shape_button_lines" />
+    </RelativeLayout>
+    <include layout="@layout/dialog_pay_number"/>
+</LinearLayout>

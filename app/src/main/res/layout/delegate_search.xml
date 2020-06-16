@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+       >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_top_search_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:text="{fa-arrow-left}"
+                android:textSize="25sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_search_view"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="@drawable/oval"
+                android:backgroundTint="@color/app_background"
+                android:gravity="center_vertical"
+                android:hint="搜索你喜爱的商品"
+                android:paddingLeft="20dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_top_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="最近搜索"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/search_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="240dp"
+            android:textSize="16sp"
+            android:text="{fa-trash-o}"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="热门搜索"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/search_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="240dp"
+            android:textSize="16sp"
+            android:text="{fa-refresh}"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

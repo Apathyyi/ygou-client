@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/shape_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/friend_back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-chevron-left}"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="社交"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_to_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/friend_icon_message"
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#00BFFF"
+                android:gravity="center"
+                android:text="{fa-commenting-o}"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+            <sy.bishe.ygou.delegate.detail.CircleTextView
+                android:visibility="gone"
+                android:id="@+id/tv_message_total_amount"
+                android:layout_width="16dp"
+                android:layout_height="10dp"
+                android:layout_alignEnd="@+id/icon_shop_cart"
+                android:layout_alignRight="@+id/friend_tv_message"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="12"
+                android:background="@drawable/oval_red"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/friend_tv_message"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="38dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:text="消息"/>
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_to_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:background="#43CD80"
+                android:textColor="@android:color/white"
+                android:text="{fa-user}"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:text="朋友"/>
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_to_dynamic"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:background="#EED8AE"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="{fa-star-o}"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="38dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:text="动态"/>
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="{fa-chevron-right}"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_background"/>
+</LinearLayout>

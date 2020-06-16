@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:background="#FFEFDB"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/hot_rank"
+           android:layout_gravity="center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="24sp"
+           android:textColor="@color/app_main"
+          />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/hot_img"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+          />
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hot_title"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+          />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/hot_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

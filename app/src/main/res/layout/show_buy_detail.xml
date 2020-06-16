@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/app_background"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_collapseMode="pin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:text="{fa-chevron-left}"
+                android:textColor="@android:color/black"
+                android:textSize="26sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="求购详情"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:textSize="16sp"
+    android:layout_height="wrap_content"
+    android:text="商品标题"
+    android:textColor="@android:color/black"
+    />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_buy_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金色大一"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/app_background"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="商品描述"
+            android:textColor="@android:color/black"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_buy_detail_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金色大一"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/app_background"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="商品预价"
+            android:textColor="@android:color/black"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_buy_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金色大一"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/app_background"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系我"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话:"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_buy_detail_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1888"/>
+
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/show_buy_detail_send"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-comment}"
+           />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/show_buy_detail_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/u1"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_buy_detail_name"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="姓名"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/show_buy_detail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="时间"/>
+
+    </LinearLayout>
+
+</LinearLayout>

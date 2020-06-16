@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edit_buy_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-chevron-left}"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:text="修改"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="24dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="类型:"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/edit_buy_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:theme="@style/SpinnerStyle"
+                    android:layout_marginLeft="6dp"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/type" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="24dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="标题:"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_buy_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:inputType="text"
+                    android:background="@null"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="24dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="描述:"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_buy_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:layout_marginLeft="6dp"
+                    android:background="@null"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="24dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="数量:"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_buy_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="24dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="期望价格:"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:background="@null"
+                    android:id="@+id/edit_buy_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/app_background"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="24dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="留下你的联系方式方便直接联系你"
+                    android:gravity="center"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="6dp">
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="{fa-phone}"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:inputType="phone"
+                    android:id="@+id/edit_buy_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buy_wait"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="正在上传"/>
+            <com.joanzapata.iconify.widget.IconTextView
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="{fa-refresh}"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:background="@drawable/oval_gray"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_gravity="center_horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/edit_buy_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="确认修改"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

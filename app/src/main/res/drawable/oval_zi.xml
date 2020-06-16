@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#9F79EE"/>
+    <corners android:topLeftRadius="8dp"
+        android:topRightRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:bottomLeftRadius="8dp"/>
+</shape>
+    <!--定义上半圆角，如果定义下面，方式一样，去掉topLeftRadius/topRightRadius,加上bottomRightRadius/bottomLeftRadius即可；-->
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Toolbar
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/release_icon_back"
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                   android:textAlignment="gravity"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="{fa-chevron-left}"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="发布管理"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/user_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@mipmap/u1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_myrelease"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="发布"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btn_myrelease_buy"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="求购"
+                   />
+            </LinearLayout>
+        </LinearLayout>
+    </Toolbar>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/app_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/rv_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/ll_release_null"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/release_bg"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="你还没发布过呢"/>
+    </LinearLayout>
+
+
+</LinearLayout>

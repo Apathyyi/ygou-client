@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/app_background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6495ED">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/balance_back"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="{fa-chevron-left}"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额(元)"
+                android:textColor="#F0F0F0"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/balance_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.66"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="18dp"
+    android:background="@color/app_background"/>
+
+    <LinearLayout
+        android:id="@+id/ll_balance_recharge"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-credit-card-alt}"
+           />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值"
+            android:textColor="@android:color/black"/>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="{fa-chevron-right}"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/balance_setting"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-cog }"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:textColor="@android:color/black"/>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="{fa-chevron-right}"
+            />
+    </LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/app_background"/>
+
+</LinearLayout>

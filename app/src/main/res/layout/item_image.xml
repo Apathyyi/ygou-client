@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image_rv_item"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:fitsSystemWindows="true"
+    android:scaleType="fitXY">
+
+</androidx.appcompat.widget.AppCompatImageView>

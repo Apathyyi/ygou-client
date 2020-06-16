@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_marginLeft="12dp"
+            android:id="@+id/addfriend_back"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="{fa-chevron-left}"
+            android:textSize="18sp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="添加好友"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/showOrder_search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_search_index"
+            android:backgroundTint="@color/app_background">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="{fa-search}" />
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/addfriend_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:hint="搜索好友名字"
+                android:textColor="#66000000"
+                android:textSize="12sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+               android:layout_gravity="right"
+                android:id="@+id/btn_addfriend_serach"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginRight="10dp"
+        android:id="@+id/rv_addfriend"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorText"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp">
+<!--    文字-->
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/icon_button_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="25sp"/>
+<!--    图片-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_button_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+</RelativeLayout>

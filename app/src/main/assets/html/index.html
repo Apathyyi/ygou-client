@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+    content="width=device-width,user-scalable=no">
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+    <title>本地测试</title>
+</head>
+<body>
+<h1>本地页面</h1>
+<button id="test">测试</button>
+<script type="text/javascript">
+    function nativeCall(){
+    alert("");
+    }
+    document.getElementById('test').onclick = function(){
+        var command = {'action':'test'};
+        YGou.event(JSON.stringify(command));
+    };
+</script>
+</body>
+</html>

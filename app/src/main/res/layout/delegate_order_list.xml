@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:id="@+id/tb_shop_cart"
+        android:gravity="center">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="{fa-chevron-left}">
+
+        </com.joanzapata.iconify.widget.IconTextView>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="订单列表"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_go_shop"
+        android:visibility="visible"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂时还有记录噢."/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/go_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:text="去购物 评价吧！"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_order_list"/>
+</LinearLayout>

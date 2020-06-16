@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btn_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_search_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/oval_search_index"
+                    android:backgroundTint="@color/app_background">
+                    <com.joanzapata.iconify.widget.IconTextView
+                        android:id="@+id/icon_indexscan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="{fa-search}" />
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edt_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:layout_gravity="center_vertical"
+                        android:hint="搜索你喜欢的商品"
+                        android:textColor="#66000000"
+                        android:textSize="12sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+            <sy.bishe.ygou.delegate.index.HorizontalScrollTabStrip
+                android:id="@+id/hrs_index"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:orientation="horizontal" >
+                <View
+                    android:id="@+id/id_bottom_line"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:background="@drawable/oval_red" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.bigkoo.convenientbanner.ConvenientBanner
+                        android:id="@+id/index_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                 </com.bigkoo.convenientbanner.ConvenientBanner>
+
+                    <LinearLayout
+                        android:id="@+id/ll_index_adv"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#FFEFD5"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/oval_red"
+                            android:gravity="center_vertical"
+                            android:text="全场特价"
+                            android:textColor="@color/white" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_vertical"
+                            android:text="立即购买，即可享受"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="4dp"
+                            android:text="一折"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="4dp"
+                            android:text="优惠"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/c1"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/index_1"
+                                app:corner_radius="15dp"
+                                app:is_circle="true" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/t1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="清仓优惠"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/c2"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/index_2"
+                                app:corner_radius="15dp"
+                                app:is_circle="true" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/t2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="人气背包"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/c3"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/index_3"
+                                app:corner_radius="15dp"
+                                app:is_circle="true" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/t3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="最新降价"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/c4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/index_4"
+                                app:corner_radius="15dp"
+                                app:is_circle="true" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/t4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:text="焕然一新"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/c5"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="2dp"
+                                android:src="@mipmap/index_5"
+                                app:corner_radius="15dp"
+                                app:is_circle="true" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/t5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="2dp"
+                                android:text="实用工具"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ll_6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/c6"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/index_6"
+                                    app:corner_radius="15dp"
+                                    app:is_circle="true" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/t6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="知名大牌"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/c7"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/index_7"
+                                    app:corner_radius="15dp"
+                                    app:is_circle="true" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/t7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="考研书籍"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/c8"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/index_8"
+                                    app:corner_radius="15dp"
+                                    app:is_circle="true" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/t8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="潮牌手机"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/c9"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/index_9"
+                                    app:corner_radius="15dp"
+                                    app:is_circle="true" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/t9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="经典乐器"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/c10"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:src="@mipmap/index_10"
+                                    app:corner_radius="15dp"
+                                    app:is_circle="true" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/t10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="晒单专区"
+                                    android:textAlignment="center"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="8sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_index_fen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/oval_zi"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:text="用YGou，分享好友即可得福利"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="5dp"
+                                android:text="限时八小时"
+                                android:textColor="#EEC900"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="卖闲置，分享好友即可得福利，限时八小时"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/oval_jin"
+                                android:text="点击分享"
+                                android:textAlignment="center"
+                                android:textColor="@color/dot_hong"
+                                android:textSize="8sp" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_all"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="全部"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                            <View
+                                android:layout_width="2dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/app_background"/>
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_like"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textAlignment="center"
+                                android:text="猜你喜欢"
+                                android:textSize="16sp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:background="@color/app_background"
+                        android:id="@+id/rv_index"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+        </ScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

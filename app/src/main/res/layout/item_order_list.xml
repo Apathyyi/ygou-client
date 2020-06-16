@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_order_release_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/order_release_userImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/u1" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_release_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:text="商家名称"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:text="{fa-chevron-right}"
+            android:textColor="@color/app_background"
+            android:textSize="12sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_height="wrap_content">
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_order_list"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/u1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_order_list_title"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:textColor="@android:color/black"
+                    android:text="dassssaaaaassssssssssssssssssaaaaaasssssss"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    tools:ignore="NestedWeight" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/tv_order_price"
+                        android:text="179.00"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="RltHardcoded"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_order_count"
+                    android:text="x1"
+                    android:textSize="12sp"
+                    tools:ignore="RltHardcoded"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/order_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="黑色拼装 L"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/order_ensure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="自负邮费"
+                    android:textSize="10sp"
+                    android:background="@drawable/oval_white"
+                    android:textStyle="normal"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="运险费"
+        />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="退换货可自动理赔"
+            android:textSize="12sp"
+        />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/tv_transportation_costs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="0.00"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_transportation_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="1"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_totalCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:text="共一件商品"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:text="合计：￥"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="179.00"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_order_list_time"
+            android:text="2020-4-5"
+            android:textSize="12sp"
+            tools:ignore="RltHardcoded"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="订单状态"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_tag"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="已完结"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_send"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="催发货"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_receive"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="确认收货"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_evl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="去评价"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="删除订单"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/order_look"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="查看评价"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RltHardcoded"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shape_button_lines">
+    </View>
+</LinearLayout>

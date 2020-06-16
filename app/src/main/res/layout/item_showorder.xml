@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/show_goods_img"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:src="@mipmap/u1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/show_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="评价"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/show_uer_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/u1"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/show_user_name"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="用户名"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/show_address"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/app_background"/>
+
+
+</LinearLayout>

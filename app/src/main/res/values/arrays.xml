@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>请选择</item>
+        <item>服装</item>/
+        <item>书籍</item>
+        <item>工具</item>
+        <item>数码</item>
+        <item>手机</item>
+        <item>美妆</item>
+        <item>电脑</item>
+        <item>宠物</item>
+        <item>乐器</item>
+        <item>其它</item>
+    </string-array>
+
+
+    <string-array name="Clothing">
+        <item>男装</item>
+        <item>女装</item>
+        <item>外套</item>
+        <item>衬衫</item>
+        <item>帽子</item>
+    </string-array>
+
+    <string-array name="Book">
+        <item>英语</item>
+        <item>数学</item>
+        <item>化学</item>
+        <item>政治</item>
+        <item>化学</item>
+    </string-array>
+    <string-array name="Tools">
+        <item>出行工具</item>
+        <item>家具工具</item>
+        <item>学习工具</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="Digital">
+        <item>耳机音箱</item>
+        <item>配件</item>
+        <item>游戏设备</item>
+        <item>摄影</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="Phone">
+        <item>热门品牌</item>
+        <item>热门型号</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="Beauty">
+        <item></item>
+        <item>护肤</item>
+        <item>彩妆</item>
+        <item>洗发</item>
+        <item>其它</item>
+    </string-array><string-array name="Computer">
+    <item>电脑</item>
+    <item>外设</item>
+    <item>网络设备</item>
+</string-array><string-array name="pet">
+    <item>主食</item>
+    <item>宠物工具</item>
+    <item>宠物用品</item>
+</string-array>
+
+<string-array name="Instrument">
+<item>弦乐器</item>
+<item>打击乐器</item>
+<item>管乐器</item>
+</string-array>
+
+    <string-array name="other">
+        <item>求购</item>
+    </string-array>
+
+    <string-array name="hrs">
+        <item>推荐</item>
+        <item>书籍</item>
+        <item>服装</item>
+        <item>工具</item>
+        <item>手机</item>
+        <item>美妆</item>
+        <item>乐器</item>
+    </string-array>
+
+
+    <string-array name="default_sort">
+        <item>清仓优惠</item>
+        <item>人气背包</item>
+        <item>最新降价</item>
+        <item>焕然一新</item>
+        <item>实用工具</item>
+        <item>知名大牌</item>
+        <item>考研书籍</item>
+        <item>潮牌手机</item>
+        <item>知名乐器</item>
+        <item>晒单专区</item>
+    </string-array>
+    <string-array name="default_img">
+    <item>热门书籍</item>
+    <item>考研必备</item>
+    <item>英语</item>
+    <item>数学</item>
+    <item>真题</item>
+    <item>六级</item>
+    <item>杂文</item>
+    <item>全国联考</item>
+    <item>国考</item>
+    <item>文都教育</item>
+    </string-array>
+
+
+    <string-array name="books_sort">
+        <item>热门书籍</item>
+        <item>考研必备</item>
+        <item>英语</item>
+        <item>数学</item>
+        <item>真题</item>
+        <item>六级</item>
+        <item>杂文</item>
+        <item>全国联考</item>
+        <item>国考</item>
+        <item>文都教育</item>
+    </string-array>
+    <string-array name="book_img">
+        <item>热门书籍</item>
+        <item>考研必备</item>
+        <item>英语</item>
+        <item>数学</item>
+        <item>真题</item>
+        <item>六级</item>
+        <item>杂文</item>
+        <item>全国联考</item>
+        <item>国考</item>
+        <item>文都教育</item>
+    </string-array>
+
+</resources>

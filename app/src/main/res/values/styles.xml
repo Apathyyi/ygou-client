@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="anim_panel_up_from_bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!-- 去掉边框-->
+        <item name="android:windowFrame">@null</item>
+        <!-- 悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 全屏-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="colorControlNormal">@android:color/black</item> <!--改变了spinner的颜色  -->
+    </style>
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_exit_from_bottom</item>
+    </style>
+
+    <!-- 中间弹出框 -->
+    <style name="dialog_center" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- 去黑边 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:screenOrientation">portrait</item>
+        <!-- 设置是否可滑动 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 背景 -->
+        <!-- 窗口背景 @color/touming的值为：#00000000 ， style中不能直接引用16进制，感谢评论区的老铁提醒-->
+
+        <item name="android:windowBackground">@color/touming</item>
+
+        <!-- 是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 点击空白部分activity不消失 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+</resources>

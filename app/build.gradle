@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.mob.sdk'
+MobSDK {
+    appKey "2e0ec39877db8"
+    appSecret "021a0b2308ff611a86edfff3073d99ea"
+    SMSSDK {
+        gui false
+        autoSMS true
+    }
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            Wechat {
+                appId "wxa215e644f9bea11e"
+                appSecret "9cbf80f070f713ae10189f436eed0f55"
+            }
+        }
+    }
+}
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "sy.bishe.ygou"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.item_dynamic.runner.AndroidJUnitRunner"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "9cba276340a738d487bdbf26", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        config {
+            keyAlias 'sykey'
+            keyPassword 'sy440222'
+            storeFile file('C:/Users/sy/Desktop/yigou.jks')
+            storePassword 'sy440222'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    greendao {
+        schemaVersion 2
+        daoPackage 'greendao'//这个是生成代码保存的包名
+        // targetGenDir 'src/main/java'//保存到java代码路径
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'androidx.item_dynamic.ext:junit:1.1.1'
+//    androidTestImplementation 'androidx.item_dynamic.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    //单activity多fragment
+    implementation 'me.yokeyword:fragmentationx:1.0.2'
+    implementation 'me.yokeyword:fragmentationx-swipeback:1.0.2'
+    //okhttp3
+    implementation 'com.squareup.okio:okio:1.13.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation "com.squareup.okhttp3:logging-interceptor:3.10.0"
+    //retrofit2
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    //Material-dialogs
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    //字体库
+    implementation 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2' // (v2.0.1)
+    implementation 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    //Loader
+    implementation 'com.wang.avi:library:2.1.3'
+    //butterknife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    //jetbrains 注解
+    implementation 'org.jetbrains:annotations:19.0.0'
+    //ConvenientBanner轮播
+    implementation 'com.bigkoo:convenientbanner:2.0.5'//地址变小写了，额。。。
+    implementation 'androidx.recyclerview:recyclerview:1.0.0+'
+    //json
+    implementation 'com.alibaba:fastjson:1.2.61'
+    //viewpager
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24'
+    //圆形图
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.Othershe:NiceImageView:1.0.0'
+    //logger
+    implementation 'com.orhanobut:logger:2.2.0'
+    //greenDAO
+    implementation 'org.greenrobot:greendao:3.2.2'
+    //微信
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    //AdapterHelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //分割线
+    implementation 'com.github.fondesa:recycler-view-divider:3.1.0'
+    implementation 'com.choices.divider:RecyclerView_Divider:1.0.0'
+    //系统状态栏颜色
+    implementation ('com.github.niorgai:StatusBarCompat:2.3.3', {
+        exclude group: 'androidx.appcompat:appcompat'
+        exclude group: 'com.google.android.material:material'
+    })
+    compileOnly 'com.google.auto.value:auto-value:1.5.2'
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.2'
+    //支付宝
+    implementation ( name:'alipaySdk-15.7.4-20200228192259',ext:"aar")
+    //图片裁剪
+    implementation 'com.github.yalantis:ucrop:2.2.4-native'
+    //极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.5.6'
+    implementation 'cn.jiguang.sdk:jcore:2.2.8'
+
+    //极光IM
+    implementation 'cn.jiguang.sdk:jmessage:2.9.0'
+    //view动画
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //roundedimageview
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.ywp0919:AddressPickerLib:1.0.1'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+}
